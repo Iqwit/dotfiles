@@ -1,8 +1,8 @@
 #!/bin/bash
 cd ~/dotfiles
 
-OLD_CONF="~/.config-old"
-CONF="~/.config"
+OLD_CONF="$HOME/.config-old"
+CONF="$HOME/.config"
 
 backup_config () {
   if ! [ -d "$OLD_CONF" ]; then
