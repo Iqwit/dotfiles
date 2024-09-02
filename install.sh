@@ -6,5 +6,5 @@ CONF="$HOME/.config"
 
 cp "$CONF" "$OLD_CONF"
 
-cp -r .config/hypr "$CONF"
-cp -r .config/waybar "$CONF"
+cp -rip .config "$HOME"
+cp -rip scripts "$HOME"
