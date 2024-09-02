@@ -17,4 +17,5 @@ backup_config () {
 backup_config hypr
 backup_config waybar
 
-cp .config/hypr "$CONF/hypr"
+cp -r .config/hypr "$CONF"
+cp -r .config/waybar "$CONF"
