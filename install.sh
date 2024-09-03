@@ -1,10 +1,13 @@
 #!/bin/bash
 cd $HOME/dotfiles
 
-OLD_CONF="$HOME/.config-old"
 CONF="$HOME/.config"
+SCRIPTS="$HOME/scripts"
 
-cp "$CONF" "$OLD_CONF"
+cp "$CONF" "$CONF-old"
+cp "$SCRIPTS" "$SCRIPTS-old"
+cp "$HOME/.bashrc" "$HOME/.bashrc-old"
 
 cp -rip .config "$HOME"
 cp -rip scripts "$HOME"
+cp -rip .bashrc "$HOME/.bashrc"
