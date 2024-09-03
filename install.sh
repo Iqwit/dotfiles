@@ -10,4 +10,5 @@ cp "$HOME/.bashrc" "$HOME/.bashrc-old"
 
 cp -rip .config "$HOME"
 cp -rip scripts "$HOME"
-cp -rip .bashrc "$HOME/.bashrc"
+cp -rip .custompromptrc "$HOME"
+echo ". .custompromptrc" >> "$HOME/.bashrc"
