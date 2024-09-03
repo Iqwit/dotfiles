@@ -1,5 +1,4 @@
 #!/bin/bash
-cd $HOME/dotfiles
 
 CONF="$HOME/.config"
 SCRIPTS="$HOME/scripts"
