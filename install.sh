@@ -4,11 +4,11 @@ cd $HOME/dotfiles
 CONF="$HOME/.config"
 SCRIPTS="$HOME/scripts"
 
-cp "$CONF" "$CONF-old"
-cp "$SCRIPTS" "$SCRIPTS-old"
-cp "$HOME/.bashrc" "$HOME/.bashrc-old"
+cp -ripy "$CONF" "$CONF-old"
+cp -ripy "$SCRIPTS" "$SCRIPTS-old"
+cp -ripy "$HOME/.bashrc" "$HOME/.bashrc-old"
 
-cp -rip .config "$HOME"
-cp -rip scripts "$HOME"
-cp -rip .custompromptrc "$HOME"
+cp -ripy .config "$HOME"
+cp -ripy scripts "$HOME"
+cp -ripy .custompromptrc "$HOME"
 echo ". .custompromptrc" >> "$HOME/.bashrc"
