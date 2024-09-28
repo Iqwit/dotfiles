@@ -1,7 +1,0 @@
-alias icat="kitten icat"
-
-PROMPT_COMMAND='ADD=$(~/scripts/add.sh)'
-PS1='╭──$ADD\[\e[38;5;231;48;5;62m\]  \[\e[38;5;62;48;5;167m\]\[\e[38;5;231;48;5;167m\] 󰄛 \[\e[38;5;167;48;5;218m\]\[\e[0;48;5;218m\] \[\e[38;5;231;48;5;218m\]\W\[\e[0;48;5;218m\] \[\e[0;38;5;218m\] \[\e[0m\]\n╰─ '
-alias rg="rg --hyperlink-format=kitty"
-alias ff="fastfetch"
-cowsay -f cat "$(($(date "+%Y") + 1)): Year of the linux desktop?"
