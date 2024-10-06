@@ -13,7 +13,8 @@ return {
           "pyright",
           "html",
           "rust_analyzer",
-          "cssls"
+          "cssls",
+          "tsserver"
         }
       })
     end
@@ -29,7 +30,7 @@ return {
       lscfg.cssls.setup({})
       lscfg.ts_ls.setup({})
       vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover, {})
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+      vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
       vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
     end
   }
